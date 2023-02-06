@@ -1,7 +1,8 @@
 # Página de login do Valorant
 ##
 Olá,
-Resolvi recriar a página de login do Valorant, trocando o background, tirando a personagem Jett e botando a bahiana Razer no lugar.
+Resolvi recriar a página de login do Valorant, trocando o background, tirando a personagem Jett e botando a baiana Razer no lugar :)
+Além de manter todas as característacas (ou quase todas) na página original.
 ##
 ### O que aprendi recriando essa página?
 - Com essa página me fez trabalhar bastante e aumentar meus conhecimentos sobre CSS3.
