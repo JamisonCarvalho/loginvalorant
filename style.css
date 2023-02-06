@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800&family=Lexend+Deca:wght@100;200;300;400;500;700&family=VT323&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+body{
+    width: 100%;
+    background-image: url(img/bg-raze-valorant.png);
+    background-attachment: fixed;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+:root {
+    --white: #fff;
+    --whitesmoke: #F9F9F9;
+    --light-grey: #ECECEC;
+    --grey: #C4C4C4;
+    --medium-grey: #A7A7A7;
+    --deep-grey: #343434;
+    --black: #000;
+    --blue: #1B77F3;
+    --red: #CF3C3F;
+}
+
+
+.login{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 530px;
+    margin: 0 auto;
+    border-radius: 10px;
+    justify-content: space-between;
+    
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login_h1{
+    padding-top: 40px;
+    color: var(--deep-grey);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.login_logo{
+   width: 15%;
+   margin: 25px 1px auto 25px;
+}
+
+.login_label{
+    display: block;
+    width: 80%;
+    margin-top: 15px;
+}
+
+.input-name{
+    width: 100%;
+    background-color: var(--light-grey);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 15px;
+    font-weight: 600;
+    color: var(--deep-grey);
+}
+
+.input{
+    width: 100%;
+    background-color: var(--light-grey);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 15px;
+    font-weight: 600;
+    color: var(--deep-grey);
+}
+
+.login_label span{
+    position: absolute;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    font-weight: 400;
+    margin: 20px;
+    cursor: text;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input:focus{
+    background: var(--whitesmoke);
+    border: 1px solid var(--deep-grey);
+}
+
+.login_label .span-active{
+    font-size: 0.6em;
+    margin: 8px 10px;
+}
+
+.login_icon{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.login_icon img{
+    width: 50px;
+}
+
+.icon_face,
+.icon_apple,
+.icon_google,
+.icon_xbox{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin: 15px 20px;
+    cursor: pointer;
+}
+
+.icon_face{
+    background: #0078F6;
+    border-radius: 10px;
+}
+
+.icon_apple{
+    background: #000;
+    border-radius: 10px;
+
+}
+
+.icon_google{
+    background: var(--whitesmoke);
+    border-radius: 10px;
+}
+
+.icon_xbox{
+    background: #0F780F;
+    border-radius: 10px;
+}
+
+.login_label_checkbox{
+    display: flex;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    align-items: center;
+}
+
+.input-checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: var(--light-grey);
+    margin-right: 8px;
+    border-radius: 3px;
+    margin-left: 20px;
+}
+
+.input-checkbox:checked{
+    background-color: var(--red);
+}
+
+.input-checkbox:checked::after{
+    content: "";
+    display: block;
+    width: 5px;
+    height: 10px;
+    border: 3px solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.login_button{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login_button:disabled{
+    background-color: var(--whitesmoke);
+    cursor: auto;
+    border: 2px solid var(--light-grey);
+}
+
+.login_link{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: var(--medium-grey);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+footer{
+    padding: 10px 15px;
+    color: var(--whitesmoke);
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+
+footer a{
+    color: var(--whitesmoke);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 890px) {
+    .login_logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+    }
+
+    body{
+        background-image: url(img/bg-raze-valorant.png);
+        }
+}
+
+@media only screen and (min-width: 1200px) {
+    body{
+    background-image: url(img/bg-raze-valorant1.png);
+    }
+}
